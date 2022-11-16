@@ -456,7 +456,7 @@ export default {
       });
     },
      submitTeacherHandle(formName) {
-      var teacher_id = this.$refs.teacherTree.getCheckedKeys();
+      var teacher_id = this.teacher_id;
       
       this.$axios
         .post("/work/course/teacher/" + this.teacherForm.id, teacher_id)
